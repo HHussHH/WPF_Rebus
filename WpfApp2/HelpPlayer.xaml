@@ -1,0 +1,65 @@
+﻿<Page x:Class="WpfApp2.HelpPlayer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HelpPlayer">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="96*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Help.jpg"/>
+        </Grid.Background>
+        <Button Grid.Row="9" Grid.Column="7" Click="Button_Click" Margin="0,7,0,6">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="/Button.png"/>
+            </Button.Background> Назад
+        </Button>
+
+        <TextBlock x:Name="textBlock" Grid.Row="8" FontSize="16" HorizontalAlignment="Left" Width="121" Margin="3,0,0,0" >
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/d0d9842ca413d145201c6b3fc4e5033d-removebg-preview (1).png"/>
+            </TextBlock.Background>
+        <Hyperlink Click="hyperlink_Click">Вконтакте</Hyperlink>
+        </TextBlock>
+
+        <TextBlock  Grid.Row="0" Grid.Column="3" FontSize="21" Foreground="#FFF7F3F3" HorizontalAlignment="Left" FontFamily="Arial Black" Margin="4,0,0,0" Width="72"> Центр</TextBlock>
+        <TextBlock  Grid.Row="0" Grid.Column="3" FontSize="21" Foreground="#FFF7F3F3" FontFamily="Arial Black" Margin="80,0,0,0">помощи</TextBlock>
+
+        <TextBlock x:Name="Telegram" Grid.Row="9" FontSize="16" HorizontalAlignment="Left" Width="118" Margin="6,0,0,0">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/d0d9842ca413d145201c6b3fc4e5033d-removebg-preview (1).png"/>
+            </TextBlock.Background>
+            <Hyperlink Click="hyperlink2_Click">Телеграм</Hyperlink>
+        </TextBlock>
+
+
+    </Grid>
+</Page>
